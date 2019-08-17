@@ -1,8 +1,10 @@
-def hello_t
-  names.each do |name|
-    puts name
+def hello_t(array)
+  i = 0
+
+  while i < array.length
+    yield array[i]
+    i = i + 1
   end
-  return names
 end
 
 # call your method here!
